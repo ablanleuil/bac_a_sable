@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+<<<<<<< HEAD
+	<name>bac_a_sable</name>
+=======
+	<name>git_bac_a_sable</name>
+>>>>>>> 2faf287ade4cf9d244bfdfd66fdcf93368d7e157
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+<<<<<<< HEAD
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+=======
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.linuxtools.rpm.core.rpmnature</nature>
+>>>>>>> 2faf287ade4cf9d244bfdfd66fdcf93368d7e157
+	</natures>
+</projectDescription>
