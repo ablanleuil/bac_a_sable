@@ -1,6 +1,6 @@
 package bac_a_sable.tutos;
 
-import bac_a_sable.core.Point;
+import bac_a_sable.core.geometrie.Point;
 
 public class References {
 

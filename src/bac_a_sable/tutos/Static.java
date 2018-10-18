@@ -1,7 +1,8 @@
 package bac_a_sable.tutos;
 
 import bac_a_sable.core.Math;
-import bac_a_sable.core.Point;
+import bac_a_sable.core.StaticTest;
+import bac_a_sable.core.geometrie.Point;
 
 public class Static {
 	public static void main(String[] args) {
@@ -37,16 +38,32 @@ public class Static {
 		// Par exemple, la classe [bac_a_sable.core.Math] ne contient que des attributs
 		// statiques.
 		
-		Math m1 = new Math();
-		Math m2 = new Math();
+		StaticTest s1 = new StaticTest();
+		StaticTest s2 = new StaticTest();
 		
-		System.out.println("m1.PI == m2.PI ? -> " + (m1.PI == m2.PI));
+		s1.notStaticValue = 6;
+		s2.notStaticValue = 10;
+		
+		// ici, les valeurs seront différentes car ce sont des cases mémoire distinctes:
+		System.out.println("notStaticValue: "+s1.notStaticValue+"  "+s2.notStaticValue);
+
+		s1.staticValue = 18;
+		s2.staticValue = 95;
+		
+		// ici, [staticValue] est une variable statique, alors tous les objets auront la
+		// dernière valeur affectée:
+		System.out.println("staticValue: "+s1.staticValue+"  "+s2.staticValue);
 		
 		// En général, les méthodes statiques d'une classe s'utilisent sans créer d'objet.
 		// Pour utiliser une méthode statique, il suffit de l'appeler avec le nom de sa classe:
+
+		// C'est très pratique quand on veut créer un module de fonctions utilitaires comme le module Math
 		
+		// La fonction racine carré est la même pour tout le monde
 		System.out.println( Math.sqrt(4) );
 		System.out.println( Math.sqrt(2) );
-		System.out.println( Math.sqrt(Math.PI) );
+		// Dès qu'on veut utiliser des constantes mathématiques comme PI, on sait où les trouver
+		System.out.println( Math.PI );
+		
 	}
 }

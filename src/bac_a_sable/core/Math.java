@@ -1,6 +1,8 @@
 package bac_a_sable.core;
 
 public class Math {
+	
+	// Une valeur *très* approximative de PI
 	public static final float PI = 3.14f;
 	
 	public static float power(float x, int n) {

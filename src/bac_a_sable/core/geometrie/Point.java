@@ -1,4 +1,4 @@
-package bac_a_sable.core;
+package bac_a_sable.core.geometrie;
 
 public class Point {
 	public int x;
